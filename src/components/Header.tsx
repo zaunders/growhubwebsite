@@ -14,7 +14,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/a781ea90-e373-4303-abd3-87cce56ac648.png" 
               alt="Growhub" 
-              className="h-10 w-auto"
+              className="h-10 w-auto bg-transparent border-none outline-none"
             />
           </Link>
           

@@ -36,7 +36,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/a781ea90-e373-4303-abd3-87cce56ac648.png" 
                 alt="Growhub" 
-                className="h-32 md:h-40 w-auto"
+                className="h-32 md:h-40 w-auto bg-transparent border-none outline-none"
               />
             </div>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
