@@ -40,7 +40,7 @@ const Index = () => {
               />
             </div>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-              Ett modernt coworking-space och kooperativ där kreativitet, 
+              Ett coworking-space och kooperativ mitt i Röstånga där kreativitet, 
               samarbete och innovation blomstrar tillsammans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
