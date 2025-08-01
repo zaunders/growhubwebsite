@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/hyr-plats" element={<HyrPlats />} />
           <Route path="/growhubs-historia" element={<GrowhubsHistoria />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Catch-all route for 404 pages */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
