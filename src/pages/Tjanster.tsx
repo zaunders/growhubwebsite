@@ -171,8 +171,8 @@ const Tjanster = () => {
               <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth" asChild>
                 <Link to="/kontakt">Kontakta oss idag</Link>
               </Button>
-              <Button variant="outline" size="lg">
-                Läs mer om oss
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/growhubs-historia">Läs mer om oss</Link>
               </Button>
             </div>
           </div>
