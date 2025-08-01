@@ -112,8 +112,8 @@ const Kontakt = () => {
                         <div>
                           <h3 className="font-semibold text-lg mb-2">Besöksadress</h3>
                           <p className="text-muted-foreground">
-                            [Adress kommer här]<br />
-                            [Postnummer] [Stad]
+                            Per Gummessonsväg 5<br />
+                            268 68 Röstånga
                           </p>
                         </div>
                       </div>
@@ -129,45 +129,13 @@ const Kontakt = () => {
                         <div>
                           <h3 className="font-semibold text-lg mb-2">E-post</h3>
                           <p className="text-muted-foreground">
-                            hej@growhub.se
+                            kontakt@growhub.se
                           </p>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card className="shadow-soft">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center">
-                          <Phone className="h-6 w-6 text-white" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-lg mb-2">Telefon</h3>
-                          <p className="text-muted-foreground">
-                            [Telefonnummer kommer här]
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <div className="bg-muted/30 rounded-lg p-6">
-                  <h3 className="font-semibold text-lg mb-3">Öppettider</h3>
-                  <div className="space-y-2 text-muted-foreground">
-                    <div className="flex justify-between">
-                      <span>Måndag - Fredag:</span>
-                      <span>08:00 - 18:00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Helger:</span>
-                      <span>Socialt häng</span>
-                    </div>
-                    <p className="text-sm mt-4">
-                      Medlemmar har 24/7 tillgång till lokalen
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
