@@ -114,21 +114,13 @@ const Index = () => {
                 </Button>
               </div>
               <div className="bg-muted rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-semibold mb-4">Våra värderingar</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-medium text-accent">Samarbete</h4>
-                    <p className="text-sm text-muted-foreground">Tillsammans når vi längre</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-accent">Hållbarhet</h4>
-                    <p className="text-sm text-muted-foreground">Ansvar för framtiden</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-accent">Innovation</h4>
-                    <p className="text-sm text-muted-foreground">Nytänkande som driver utveckling</p>
-                  </div>
-                </div>
+                <h3 className="text-2xl font-semibold mb-4">Vilka är vi?</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Vi som sitter på Growhub jobbar med lokal utveckling, energi, ekonomi, 
+                  arkitektur, mjukvaruutveckling, terapi med mera. Vi är en spännande och 
+                  varm grupp av människor med massor av kunskaper vi tycker om att dela 
+                  med oss av!
+                </p>
               </div>
             </div>
           </div>
