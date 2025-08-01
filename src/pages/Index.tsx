@@ -32,9 +32,13 @@ const Index = () => {
       <section className="py-20 bg-hero-gradient text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Välkommen till Growhub
-            </h1>
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/d792430b-145b-40f6-ac0f-37994853328b.png" 
+                alt="Growhub" 
+                className="h-32 md:h-40 w-auto"
+              />
+            </div>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
               Ett modernt coworking-space och kooperativ där kreativitet, 
               samarbete och innovation blomstrar tillsammans.

@@ -12,7 +12,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center hover:opacity-80 transition-smooth">
             <img 
-              src="/lovable-uploads/8881b441-310b-4654-b768-df32976cd88a.png" 
+              src="/lovable-uploads/d792430b-145b-40f6-ac0f-37994853328b.png" 
               alt="Growhub" 
               className="h-10 w-auto"
             />
