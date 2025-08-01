@@ -44,8 +44,9 @@ const Index = () => {
                 variant="hero" 
                 size="lg"
                 className="transition-smooth"
+                asChild
               >
-                Hyr plats hos oss
+                <Link to="/hyr-plats">Hyr plats hos oss</Link>
               </Button>
               <Button 
                 variant="hero-outline" 
