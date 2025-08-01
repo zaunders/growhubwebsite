@@ -34,9 +34,9 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/4c873342-01e4-4f32-b8fe-30b190540b21.png" 
+                src="/lovable-uploads/faefb49c-9376-4e7b-9c7a-0adc35748e07.png" 
                 alt="Growhub" 
-                className="h-32 md:h-40 w-auto bg-transparent border-none outline-none"
+                className="h-40 md:h-48 w-auto bg-transparent border-none outline-none"
               />
             </div>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
