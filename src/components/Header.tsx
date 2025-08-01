@@ -10,8 +10,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16">
-          <Link to="/" className="font-bold text-xl text-foreground hover:text-primary transition-smooth">
-            Growhub
+          <Link to="/" className="flex items-center hover:opacity-80 transition-smooth">
+            <img 
+              src="/lovable-uploads/8881b441-310b-4654-b768-df32976cd88a.png" 
+              alt="Growhub" 
+              className="h-10 w-auto"
+            />
           </Link>
           
           <div className="flex items-center space-x-8">
