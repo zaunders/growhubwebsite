@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { Users, Lightbulb, Target, BookOpen, Puzzle, MessageCircle } from "lucide-react";
 
 const Tjanster = () => {
@@ -69,8 +70,9 @@ const Tjanster = () => {
               variant="secondary" 
               size="lg" 
               className="shadow-medium hover:shadow-soft transition-smooth"
+              asChild
             >
-              Boka ett möte
+              <Link to="/kontakt">Boka ett möte</Link>
             </Button>
           </div>
         </div>
@@ -166,8 +168,8 @@ const Tjanster = () => {
               facilitera framgångsrika förändringsprocesser.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth">
-                Kontakta oss idag
+              <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth" asChild>
+                <Link to="/kontakt">Kontakta oss idag</Link>
               </Button>
               <Button variant="outline" size="lg">
                 Läs mer om oss
