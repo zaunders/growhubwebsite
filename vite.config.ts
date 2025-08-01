@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Set the base path for GitHub Pages deployment
+  // Change this to your repository name if deploying to username.github.io/repository-name
+  // Keep as '/' if deploying to a custom domain or username.github.io
+  base: mode === 'production' ? '/growhub/' : '/',
   server: {
     host: "::",
     port: 8080,

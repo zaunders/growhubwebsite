@@ -1,0 +1,4 @@
+# GitHub Pages configuration
+# This tells GitHub Pages to include files starting with underscores
+include:
+  - _redirects
