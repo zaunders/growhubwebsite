@@ -93,7 +93,7 @@ const HyrPlats = () => {
                     </div>
                     <h3 className="font-semibold text-lg mb-2">Internet</h3>
                     <p className="text-muted-foreground">
-                      Snabb och stabil internetuppkoppling ingår alltid
+                      Internet ingår i hyran
                     </p>
                   </CardContent>
                 </Card>
