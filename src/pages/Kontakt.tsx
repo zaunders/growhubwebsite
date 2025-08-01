@@ -80,7 +80,7 @@ const Kontakt = () => {
                       />
                     </div>
                     
-                    <Button type="submit" size="lg" className="w-full bg-hero-gradient hover:opacity-90 transition-smooth gap-2">
+                    <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 transition-smooth gap-2">
                       <Send className="h-4 w-4" />
                       Skicka meddelande
                     </Button>

@@ -57,7 +57,7 @@ const GrowhubsHistoria = () => {
                   
                   <Button 
                     size="lg" 
-                    className="bg-hero-gradient hover:opacity-90 transition-smooth"
+                    className="bg-primary hover:bg-primary/90 transition-smooth"
                     asChild
                   >
                     <Link to="/kontakt">Kontakta oss</Link>

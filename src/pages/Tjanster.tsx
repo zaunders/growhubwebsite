@@ -168,7 +168,7 @@ const Tjanster = () => {
               facilitera framgångsrika förändringsprocesser.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth" asChild>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth" asChild>
                 <Link to="/kontakt">Kontakta oss idag</Link>
               </Button>
               <Button variant="outline" size="lg">

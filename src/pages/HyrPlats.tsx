@@ -159,7 +159,7 @@ const HyrPlats = () => {
                     hjälper dig att komma igång.
                   </p>
                   <Link to="/kontakt">
-                    <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth gap-2">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth gap-2">
                       Kontakta oss
                       <ArrowRight className="h-4 w-4" />
                     </Button>

@@ -119,7 +119,7 @@ const Aktivitetslokalen = () => {
               Kontakta oss för information om framtida tillgänglighet 
               eller andra träningsrelaterade aktiviteter.
             </p>
-            <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth">
               Kontakta oss
             </Button>
           </div>

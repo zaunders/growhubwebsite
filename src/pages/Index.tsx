@@ -156,7 +156,7 @@ const Index = () => {
               Gå med i Growhub idag och upptäck hur produktivt och inspirerande 
               det kan vara att arbeta i en stödjande kooperativ miljö.
             </p>
-            <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth" asChild>
               <a href="/kontakt">Kontakta oss för mer information</a>
             </Button>
           </div>
