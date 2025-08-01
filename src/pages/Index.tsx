@@ -8,7 +8,7 @@ const Index = () => {
   const features = [
     {
       icon: Coffee,
-      title: "Kontor, mötesrum och gemensam kokvrå",
+      title: "Kontor, mötesrum och kök",
       description: "Fullt utrustade arbetsmiljöer och gemensamma utrymmen"
     },
     {
@@ -40,9 +40,9 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
-                variant="secondary" 
+                variant="hero" 
                 size="lg"
-                className="shadow-medium hover:shadow-soft transition-smooth"
+                className="transition-smooth"
               >
                 Hyr plats hos oss
               </Button>
