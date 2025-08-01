@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
@@ -50,8 +51,9 @@ const Index = () => {
                 variant="hero-outline" 
                 size="lg"
                 className="transition-smooth"
+                asChild
               >
-                Läs mer om Growhub
+                <Link to="/growhubs-historia">Läs mer om Growhub</Link>
               </Button>
             </div>
           </div>
