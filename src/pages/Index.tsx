@@ -100,8 +100,8 @@ const Index = () => {
                   många lokala möten och lokalen är öppen för socialt häng på kvällar och helger.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Som kooperativ ägs och drivs vi av våra medlemmar, vilket skapar en 
-                  unik miljö där alla har en röst och bidrar till vår gemensamma framgång.
+                  Growhub är ett kooperativ som finns till för att skapa förutsättningar oss i byn Röstånga 
+                  att arbeta i en fin och produktiv miljö tillsammans. Föreningen drivs av hyresgästerna. Välkommen!
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <Badge variant="secondary">Kooperativ</Badge>
