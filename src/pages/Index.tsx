@@ -34,7 +34,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
               <img 
-                src="/lovable-uploads/d792430b-145b-40f6-ac0f-37994853328b.png" 
+                src="/lovable-uploads/7167e824-a69d-4fd9-a505-11fe8756cfe9.png" 
                 alt="Growhub" 
                 className="h-32 md:h-40 w-auto"
               />
