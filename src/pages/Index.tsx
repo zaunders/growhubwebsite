@@ -113,14 +113,27 @@ const Index = () => {
                   <a href="/kontakt">Kontakta oss om du vill skapa tillsammans med oss</a>
                 </Button>
               </div>
-              <div className="bg-muted rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-semibold mb-4">Vilka är vi?</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Vi som sitter på Growhub jobbar med lokal utveckling, energi, ekonomi, 
-                  arkitektur, mjukvaruutveckling, terapi med mera. Vi är en spännande och 
-                  varm grupp av människor med massor av kunskaper vi tycker om att dela 
-                  med oss av!
-                </p>
+              <div className="bg-muted rounded-lg p-8">
+                <h3 className="text-2xl font-semibold mb-6 text-center">Vilka är vi?</h3>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Vi som sitter på Growhub representerar en bred mix av kompetenser och 
+                    passioner som sträcker sig över många olika områden:
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <Badge variant="outline">Lokal utveckling</Badge>
+                    <Badge variant="outline">Energi</Badge>
+                    <Badge variant="outline">Ekonomi</Badge>
+                    <Badge variant="outline">Arkitektur</Badge>
+                    <Badge variant="outline">Mjukvaruutveckling</Badge>
+                    <Badge variant="outline">Terapi</Badge>
+                    <Badge variant="outline">Med mera</Badge>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed text-center">
+                    Vi är en spännande och varm grupp av människor med massor av kunskaper 
+                    vi tycker om att dela med oss av!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
