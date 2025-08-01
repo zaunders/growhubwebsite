@@ -7,11 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Kontakt = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted");
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -47,37 +42,38 @@ const Kontakt = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form action="https://formspree.io/f/meozlqwg" method="POST" className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">Förnamn</Label>
-                        <Input id="firstName" placeholder="Ditt förnamn" required />
+                        <Input id="firstName" name="firstName" placeholder="Ditt förnamn" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName">Efternamn</Label>
-                        <Input id="lastName" placeholder="Ditt efternamn" required />
+                        <Input id="lastName" name="lastName" placeholder="Ditt efternamn" required />
                       </div>
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="email">E-post</Label>
-                      <Input id="email" type="email" placeholder="din@email.se" required />
+                      <Input id="email" name="email" type="email" placeholder="din@email.se" required />
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="phone">Telefon (valfritt)</Label>
-                      <Input id="phone" type="tel" placeholder="070-123 45 67" />
+                      <Input id="phone" name="phone" type="tel" placeholder="070-123 45 67" />
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="subject">Ämne</Label>
-                      <Input id="subject" placeholder="Vad handlar ditt meddelande om?" required />
+                      <Input id="subject" name="subject" placeholder="Vad handlar ditt meddelande om?" required />
                     </div>
                     
                     <div className="space-y-2">
                       <Label htmlFor="message">Meddelande</Label>
                       <Textarea 
                         id="message" 
+                        name="message"
                         placeholder="Berätta mer om ditt intresse eller dina frågor..."
                         className="min-h-[120px]"
                         required 
