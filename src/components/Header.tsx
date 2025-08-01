@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16">
           <Link to="/" className="font-bold text-xl text-foreground hover:text-primary transition-smooth">
-            Hub Haven
+            Growhub
           </Link>
           
           <div className="flex space-x-8">

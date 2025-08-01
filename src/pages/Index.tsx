@@ -7,14 +7,9 @@ import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
 const Index = () => {
   const features = [
     {
-      icon: Wifi,
-      title: "Snabbt Wi-Fi",
-      description: "Supersnabb internetuppkoppling för alla dina behov"
-    },
-    {
       icon: Coffee,
-      title: "Kaffe & Te",
-      description: "Obegränsat med kaffe, te och andra drycker"
+      title: "Kontor, mötesrum och gemensam kokvrå",
+      description: "Fullt utrustade arbetsmiljöer och gemensamma utrymmen"
     },
     {
       icon: Calendar,
@@ -25,16 +20,6 @@ const Index = () => {
       icon: Users,
       title: "Community",
       description: "Träffa likasinnade entreprenörer och kreatörer"
-    },
-    {
-      icon: Zap,
-      title: "Flexibilitet",
-      description: "Välja mellan dagsbiljetter och månadskort"
-    },
-    {
-      icon: Shield,
-      title: "Säker miljö",
-      description: "Trygg och professionell arbetsmiljö"
     }
   ];
 
@@ -47,7 +32,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Välkommen till Hub Haven
+              Välkommen till Growhub
             </h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
               Ett modernt coworking-space och kooperativ där kreativitet, 
@@ -111,7 +96,7 @@ const Index = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Ett kooperativ för kreativa själar</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Hub Haven är mer än bara en arbetslokale - vi är en gemenskap av 
+                  Growhub är mer än bara en arbetslokale - vi är en gemenskap av 
                   entreprenörer, freelancers och kreatörer som tror på kraften i samarbete.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -156,7 +141,7 @@ const Index = () => {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Redo att bli en del av gemenskapen?</h2>
             <p className="text-muted-foreground mb-8 text-lg">
-              Gå med i Hub Haven idag och upptäck hur produktivt och inspirerande 
+              Gå med i Growhub idag och upptäck hur produktivt och inspirerande 
               det kan vara att arbeta i en stödjande kooperativ miljö.
             </p>
             <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth">
