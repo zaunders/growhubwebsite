@@ -47,9 +47,9 @@ const Index = () => {
                 Hyr plats hos oss
               </Button>
               <Button 
-                variant="outline" 
+                variant="hero-outline" 
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 transition-smooth"
+                className="transition-smooth"
               >
                 Läs mer om Growhub
               </Button>
