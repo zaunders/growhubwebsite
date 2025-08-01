@@ -15,15 +15,25 @@ const Header = () => {
           </Link>
           
           <div className="flex space-x-8">
-            <Link
-              to="/"
-              className={cn(
-                "text-sm font-medium transition-smooth hover:text-primary",
-                isActive("/") ? "text-primary" : "text-muted-foreground"
-              )}
-            >
-              Coworking
-            </Link>
+            <div className="relative group">
+              <Link
+                to="/"
+                className={cn(
+                  "text-sm font-medium transition-smooth hover:text-primary",
+                  (isActive("/") || isActive("/hyr-plats")) ? "text-primary" : "text-muted-foreground"
+                )}
+              >
+                Coworking
+              </Link>
+              <div className="absolute top-full left-0 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-background border rounded-md shadow-lg py-2 min-w-[140px] z-50">
+                <Link
+                  to="/hyr-plats"
+                  className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-muted/50 transition-smooth"
+                >
+                  Hyr plats
+                </Link>
+              </div>
+            </div>
             <Link
               to="/aktivitetslokalen"
               className={cn(
