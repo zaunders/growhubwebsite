@@ -96,8 +96,8 @@ const Index = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Ett kooperativ för kreativa själar</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Growhub är mer än bara en arbetslokale - vi är en gemenskap av 
-                  entreprenörer, freelancers och kreatörer som tror på kraften i samarbete.
+                  Growhub är mer än bara ett kontor. Vi huserar en inköpsförening för fantastisk mat, 
+                  många lokala möten och lokalen är öppen för socialt häng på kvällar och helger.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Som kooperativ ägs och drivs vi av våra medlemmar, vilket skapar en 
@@ -109,8 +109,8 @@ const Index = () => {
                   <Badge variant="secondary">Inkluderande</Badge>
                   <Badge variant="secondary">Innovativt</Badge>
                 </div>
-                <Button className="bg-primary hover:bg-primary/90 transition-smooth">
-                  Bli medlem idag
+                <Button className="bg-primary hover:bg-primary/90 transition-smooth" asChild>
+                  <a href="/kontakt">Kontakta oss om du vill skapa tillsammans med oss</a>
                 </Button>
               </div>
               <div className="bg-muted rounded-lg p-8 text-center">
@@ -144,8 +144,8 @@ const Index = () => {
               Gå med i Growhub idag och upptäck hur produktivt och inspirerande 
               det kan vara att arbeta i en stödjande kooperativ miljö.
             </p>
-            <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth">
-              Kontakta oss för mer information
+            <Button size="lg" className="bg-hero-gradient hover:opacity-90 transition-smooth" asChild>
+              <a href="/kontakt">Kontakta oss för mer information</a>
             </Button>
           </div>
         </div>
