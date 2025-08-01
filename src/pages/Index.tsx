@@ -29,7 +29,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-hero-gradient text-primary-foreground">
+      <section className="py-20 bg-hero-gradient text-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">

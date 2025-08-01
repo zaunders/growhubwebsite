@@ -37,7 +37,7 @@ All colors MUST be HSL.
     --ring: 95 35% 35%;
 
     /* Custom tokens for Growhub */
-    --hero-gradient: linear-gradient(135deg, hsl(95 35% 35%), hsl(95 40% 45%));
+    --hero-gradient: linear-gradient(135deg, hsl(95 15% 95%), hsl(95 20% 92%));
     --section-gradient: linear-gradient(180deg, hsl(45 20% 98%), hsl(95 15% 95%));
     --accent-gradient: linear-gradient(45deg, hsl(95 40% 55%), hsl(95 45% 65%));
     
