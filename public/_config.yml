@@ -1,4 +1,8 @@
-# GitHub Pages configuration
+# GitHub Pages configuration for SPA
 # This tells GitHub Pages to include files starting with underscores
 include:
   - _redirects
+
+# Disable Jekyll processing for better SPA support
+plugins: []
+markdown: kramdown
