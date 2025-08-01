@@ -44,14 +44,14 @@ const Index = () => {
                 size="lg"
                 className="shadow-medium hover:shadow-soft transition-smooth"
               >
-                Boka en visning
+                Hyr plats hos oss
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-white/30 text-white hover:bg-white/10 transition-smooth"
               >
-                Läs mer om oss
+                Läs mer om Growhub
               </Button>
             </div>
           </div>
