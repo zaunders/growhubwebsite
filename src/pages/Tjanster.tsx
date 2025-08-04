@@ -135,7 +135,7 @@ const Tjanster = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4 text-accent-foreground text-xl font-bold">
+                <div className="w-16 h-16 bg-primary/70 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">
                   2
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Design</h3>
@@ -145,7 +145,7 @@ const Tjanster = () => {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground text-xl font-bold">
+                <div className="w-16 h-16 bg-primary/40 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">
                   3
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Leverans</h3>
