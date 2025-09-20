@@ -9,6 +9,7 @@ import Tjanster from "./pages/Tjanster";
 import Kontakt from "./pages/Kontakt";
 import HyrPlats from "./pages/HyrPlats";
 import GrowhubsHistoria from "./pages/GrowhubsHistoria";
+import Makerspace from "./pages/Makerspace";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/hyr-plats" element={<HyrPlats />} />
           <Route path="/growhubs-historia" element={<GrowhubsHistoria />} />
+          <Route path="/makerspace" element={<Makerspace />} />
           {/* Catch-all route for 404 pages */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -57,6 +57,15 @@ const Header = () => {
               Tjänster
             </Link>
             <Link
+              to="/makerspace"
+              className={cn(
+                "text-sm font-medium transition-smooth hover:text-primary",
+                isActive("/makerspace") ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              Makerspace
+            </Link>
+            <Link
               to="/kontakt"
               className={cn(
                 "text-sm font-medium transition-smooth hover:text-primary",
