@@ -3,18 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wrench, Users, Lightbulb, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Makerspace = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Makerspace på Growhub
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">Makerspace</h1>
           <p className="text-xl text-muted-foreground mb-8">
             En plats för att bygga, hacka och leka med teknologi tillsammans
           </p>
@@ -28,7 +24,7 @@ const Makerspace = () => {
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
                 <Calendar className="w-8 h-8 text-primary mr-3" />
-                <h2 className="text-2xl font-semibold">Oktober 2025</h2>
+                <h2 className="text-2xl font-semibold">En ny teknisk rörelse i Röstånga!</h2>
               </div>
               <p className="text-lg leading-relaxed mb-6">
                 I Oktober 2025 så bildas ett makerspace på Growhub i Röstånga.
@@ -82,8 +78,6 @@ const Makerspace = () => {
           </Card>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Makerspace;
