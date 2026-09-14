@@ -39,15 +39,6 @@ const Header = () => {
               </div>
             </div>
             <Link
-              to="/aktivitetslokalen"
-              className={cn(
-                "text-sm font-medium transition-smooth hover:text-primary",
-                isActive("/aktivitetslokalen") ? "text-primary" : "text-muted-foreground"
-              )}
-            >
-              Aktivitetslokalen
-            </Link>
-            <Link
               to="/tjanster"
               className={cn(
                 "text-sm font-medium transition-smooth hover:text-primary",
