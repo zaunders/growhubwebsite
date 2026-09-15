@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, Wifi, Coffee, Users, ArrowRight } from "lucide-react";
+
 
 const HyrPlats = () => {
   return (
