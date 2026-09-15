@@ -21,14 +21,6 @@ const HyrPlats = () => {
               Få din egen plats i våra delade kontorsrum med 24/7 tillgång till 
               alla faciliteter och en inspirerande arbetsmiljö.
             </p>
-            <div className="flex items-center justify-center gap-4">
-              <Badge variant="secondary" className="text-lg px-4 py-2">
-                2 lediga platser
-              </Badge>
-              <Badge variant="outline" className="text-lg px-4 py-2">
-                Från 1000kr/mån
-              </Badge>
-            </div>
           </div>
         </div>
       </section>
@@ -38,36 +30,6 @@ const HyrPlats = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
-            {/* Overview */}
-            <div className="mb-16">
-              <Card className="shadow-medium">
-                <CardHeader>
-                  <CardTitle className="text-2xl mb-2">Lediga kontorsplatser</CardTitle>
-                  <CardDescription className="text-base">
-                    Vi har just nu ett par lediga platser i våra delade kontorsrum.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-3">
-                      <h3 className="font-semibold text-lg">Tillgänglighet</h3>
-                      <p className="text-muted-foreground">
-                        <strong>7 platser totalt</strong> i delade kontorsrum<br />
-                        <strong>2 lediga platser</strong> för nya hyresgäster
-                      </p>
-                    </div>
-                    
-                    <div className="space-y-3">
-                      <h3 className="font-semibold text-lg">Priser</h3>
-                      <p className="text-muted-foreground">
-                        <strong>1000-1300kr + moms per månad</strong><br />
-                        Priset beror på hur många som delar rummet
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
 
             {/* Features */}
             <div className="mb-16">
