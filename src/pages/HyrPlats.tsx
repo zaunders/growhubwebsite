@@ -1,8 +1,11 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { MapPin, Clock, Wifi, Coffee, Users, ArrowRight } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { MapPin, Clock, Wifi, Coffee, Users, Send, Leaf, Home, Phone } from "lucide-react";
+import annonsBild from "@/assets/hyr-plats-annons.jpg.asset.json";
 
 
 const HyrPlats = () => {
@@ -25,11 +28,54 @@ const HyrPlats = () => {
         </div>
       </section>
 
+
       {/* Main Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            
+
+            {/* Annons */}
+            <Card className="shadow-medium overflow-hidden mb-16">
+              <div className="grid md:grid-cols-2">
+                <img 
+                  src={annonsBild.url} 
+                  alt="Ledig arbetsplats vid fönstret på Growhub i Röstånga"
+                  className="h-full w-full object-cover"
+                />
+                <CardContent className="p-8 md:p-10 flex flex-col justify-center">
+                  <span className="inline-flex items-center gap-2 self-start rounded-full bg-accent-gradient px-4 py-1.5 text-sm font-semibold text-white mb-4">
+                    <Leaf className="h-4 w-4" />
+                    En plats är öppen just nu
+                  </span>
+                  <h2 className="text-3xl font-bold mb-4 text-foreground">
+                    Coworkingplats i hjärtat av Röstånga
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Vi är just nu 7 personer som delar på en ljus och trivsam lokal 
+                    på cirka 150 kvm i centrala Röstånga. Nu har du möjlighet att 
+                    ta en av platserna i våra delade kontorsrum.
+                  </p>
+                  <div className="space-y-2 mb-6">
+                    <p className="flex items-center gap-2 text-foreground">
+                      <MapPin className="h-5 w-5 text-primary" />
+                      Per Gummessons väg 5, Röstånga
+                    </p>
+                    <p className="flex items-center gap-2 text-foreground">
+                      <Clock className="h-5 w-5 text-primary" />
+                      Tillgång till lokalen dygnet runt, alla dagar
+                    </p>
+                    <p className="flex items-center gap-2 text-foreground font-semibold">
+                      <Home className="h-5 w-5 text-primary" />
+                      1 300 kr per månad
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Hör gärna av dig om du är nyfiken eller vill komma förbi och tittal!
+                  </p>
+                </CardContent>
+              </div>
+            </Card>
+
 
             {/* Features */}
             <div className="mb-16">
@@ -48,6 +94,7 @@ const HyrPlats = () => {
                   </CardContent>
                 </Card>
 
+
                 <Card className="shadow-soft">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -59,6 +106,7 @@ const HyrPlats = () => {
                     </p>
                   </CardContent>
                 </Card>
+
 
                 <Card className="shadow-soft">
                   <CardContent className="p-6 text-center">
@@ -72,6 +120,7 @@ const HyrPlats = () => {
                   </CardContent>
                 </Card>
 
+
                 <Card className="shadow-soft">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -83,6 +132,7 @@ const HyrPlats = () => {
                     </p>
                   </CardContent>
                 </Card>
+
 
                 <Card className="shadow-soft">
                   <CardContent className="p-6 text-center">
@@ -96,6 +146,7 @@ const HyrPlats = () => {
                   </CardContent>
                 </Card>
 
+
                 <Card className="shadow-soft">
                   <CardContent className="p-6 text-center">
                     <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -108,27 +159,61 @@ const HyrPlats = () => {
                   </CardContent>
                 </Card>
 
+
               </div>
             </div>
 
-            {/* CTA Section */}
-            <div className="text-center">
-              <Card className="shadow-medium bg-section-gradient">
-                <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-4">Intresserad av att hyra en plats?</h2>
-                  <p className="text-muted-foreground mb-6 text-lg">
-                    Kontakta oss så berättar vi mer om våra lediga platser och 
-                    hjälper dig att komma igång.
-                  </p>
-                  <Link to="/kontakt">
-                    <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth gap-2">
-                      Kontakta oss
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
+            {/* Ansökningsformulär */}
+            <Card className="shadow-medium bg-section-gradient">
+              <CardContent className="p-8 md:p-12">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+                  Ansök om en plats
+                </h2>
+                <p className="text-muted-foreground mb-8 text-lg text-center max-w-2xl mx-auto">
+                  Intresserad av att hyra platsen? Fyll i formuläret nedan så hör vi av oss 
+                  så kan du komma förbi och titta på platsen.
+                </p>
+                <form 
+                  action="https://formspree.io/f/meozlqwg" 
+                  method="POST" 
+                  className="space-y-6 max-w-2xl mx-auto"
+                >
+                  <input type="hidden" name="_subject" value="Ansökan om kontorsplats på Growhub" />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="applicantName">Namn</Label>
+                      <Input id="applicantName" name="name" placeholder="Ditt namn" required />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="applicantEmail">E-post</Label>
+                      <Input id="applicantEmail" name="email" type="email" placeholder="din@email.se" required />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="applicantPhone">Telefon (valfritt)</Label>
+                    <Input id="applicantPhone" name="phone" type="tel" placeholder="070-123 45 67" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="applicantMessage">Meddelande</Label>
+                    <Textarea 
+                      id="applicantMessage" 
+                      name="message"
+                      placeholder="Berätta kort om dig själv, vad du arbetar med och vad du är nyfiken på..."
+                      className="min-h-[120px]"
+                      required 
+                    />
+                  </div>
+                  <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 transition-smooth gap-2">
+                    <Send className="h-4 w-4" />
+                    Skicka ansökan
+                  </Button>
+                </form>
+                <p className="text-muted-foreground text-sm text-center mt-6">
+                  Du kan också ringa oss: Viktor 0733-90 70 11 eller Vanda 0736-427 610
+                </p>
+              </CardContent>
+            </Card>
+
 
           </div>
         </div>
@@ -136,5 +221,6 @@ const HyrPlats = () => {
     </div>
   );
 };
+
 
 export default HyrPlats;
