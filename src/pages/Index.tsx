@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
 
 const Index = () => {
   const features = [
