@@ -209,7 +209,7 @@ const HyrPlats = () => {
                   </Button>
                 </form>
                 <p className="text-muted-foreground text-sm text-center mt-6">
-                  Du kan också ringa oss: Viktor 0733-90 70 11 eller Vanda 0736-427 610
+                  Du kan också ringa oss: Viktor 0733-90 70 11
                 </p>
               </CardContent>
             </Card>
