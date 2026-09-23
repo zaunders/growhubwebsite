@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
 
 const Index = () => {
   const features = [
@@ -143,6 +144,12 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            <img 
+              src={coworkingHall.url} 
+              alt="Ljus och mysig lounge i Growhubs gemensamma lokal"
+              className="mt-12 w-full rounded-lg shadow-soft object-cover max-h-[480px]"
+            />
           </div>
         </div>
       </section>
