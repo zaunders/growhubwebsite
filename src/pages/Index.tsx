@@ -96,6 +96,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Hall Image */}
+      <section>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <img
+              src={coworkingHall.url}
+              alt="Ljus och mysig lounge i Growhubs gemensamma lokal"
+              className="w-full rounded-lg shadow-soft object-cover max-h-[480px]"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-16 bg-section-gradient">
         <div className="container mx-auto px-4">
@@ -144,12 +157,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-
-            <img 
-              src={coworkingHall.url} 
-              alt="Ljus och mysig lounge i Growhubs gemensamma lokal"
-              className="mt-12 w-full rounded-lg shadow-soft object-cover max-h-[480px]"
-            />
           </div>
         </div>
       </section>
