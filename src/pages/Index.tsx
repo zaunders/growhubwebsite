@@ -144,6 +144,12 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            <img 
+              src={coworkingHall.url} 
+              alt="Ljus och mysig lounge i Growhubs gemensamma lokal"
+              className="mt-12 w-full rounded-lg shadow-soft object-cover max-h-[480px]"
+            />
           </div>
         </div>
       </section>
