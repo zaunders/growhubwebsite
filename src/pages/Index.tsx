@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
 import gemenskapLounge from "@/assets/gemenskap-lounge.jpg.asset.json";
-import kontorsrum1 from "@/assets/kontorsrum-1.jpg.asset.json";
 import motesrum from "@/assets/motesrum.jpg.asset.json";
 import kok from "@/assets/kok.jpg.asset.json";
 import kontorsrum2 from "@/assets/kontorsrum-2.jpg.asset.json";
@@ -22,10 +21,6 @@ const slides = [
   {
     src: coworkingHall.url,
     alt: "Ljus och mysig lounge i Growhubs gemensamma lokal",
-  },
-  {
-    src: kontorsrum1.url,
-    alt: "Kontorsrum på Growhub med konst på väggen",
   },
   {
     src: motesrum.url,
