@@ -113,15 +113,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Hall Image */}
+      {/* Bildspel */}
       <section>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <img
-              src={coworkingHall.url}
-              alt="Ljus och mysig lounge i Growhubs gemensamma lokal"
-              className="w-full rounded-lg shadow-soft object-cover max-h-[480px]"
-            />
+            <ImageSlideshow />
           </div>
         </div>
       </section>
