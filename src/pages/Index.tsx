@@ -57,7 +57,7 @@ const ImageSlideshow = () => {
   }, []);
 
   return (
-    <div className="relative w-full rounded-lg overflow-hidden shadow-soft group">
+    <div className="w-full rounded-lg overflow-hidden shadow-soft">
       <div className="relative max-h-[480px] aspect-[16/9]">
         {slides.map((slide, index) => (
           <img
@@ -71,14 +71,14 @@ const ImageSlideshow = () => {
           />
         ))}
       </div>
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="flex justify-center gap-2 py-4 bg-background">
         {slides.map((_, index) => (
           <button
             key={index}
             aria-label={`Visa bild ${index + 1}`}
             onClick={() => setCurrent(index)}
             className={cn(
-              "w-2.5 h-2.5 rounded-full transition-smooth",
+              "w-3 h-3 rounded-full transition-smooth",
               index === current ? "bg-primary" : "bg-primary/30 hover:bg-primary/50"
             )}
           />
@@ -139,7 +139,7 @@ const Index = () => {
       </section>
 
       {/* Bildspel */}
-      <section>
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <ImageSlideshow />
