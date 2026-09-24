@@ -226,7 +226,6 @@ const Index = () => {
                     <Badge variant="outline">Ekonomi</Badge>
                     <Badge variant="outline">Arkitektur</Badge>
                     <Badge variant="outline">Mjukvaruutveckling</Badge>
-                    <Badge variant="outline">Terapi</Badge>
                     <Badge variant="outline">Mat</Badge>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-center">
