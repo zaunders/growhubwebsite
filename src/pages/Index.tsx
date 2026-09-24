@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
 import gemenskapLounge from "@/assets/gemenskap-lounge.jpg.asset.json";
+import kontorsrum1 from "@/assets/kontorsrum-1.jpg.asset.json";
+import motesrum from "@/assets/motesrum.jpg.asset.json";
+import kok from "@/assets/kok.jpg.asset.json";
+import kontorsrum2 from "@/assets/kontorsrum-2.jpg.asset.json";
+import kontorsrum3 from "@/assets/kontorsrum-3.jpg.asset.json";
 import { cn } from "@/lib/utils";
 
 const slides = [
@@ -17,6 +22,26 @@ const slides = [
   {
     src: coworkingHall.url,
     alt: "Ljus och mysig lounge i Growhubs gemensamma lokal",
+  },
+  {
+    src: kontorsrum1.url,
+    alt: "Kontorsrum på Growhub med konst på väggen",
+  },
+  {
+    src: motesrum.url,
+    alt: "Ljust mötesrum med bord och stolar",
+  },
+  {
+    src: kok.url,
+    alt: "Gemensamt kök med mikro och diskbänk",
+  },
+  {
+    src: kontorsrum2.url,
+    alt: "Kontorsplats vid fönstret med krukväxter",
+  },
+  {
+    src: kontorsrum3.url,
+    alt: "Sit-stand-bord vid fönstret i ett kontorsrum",
   },
   // Fler bilder läggs enkelt till här när de kommer
 ];
