@@ -104,9 +104,9 @@ const HyrPlats = () => {
                     <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Wifi className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-lg mb-2">Internet</h3>
+                    <h3 className="font-semibold text-lg mb-2">Fiberinternet</h3>
                     <p className="text-muted-foreground">
-                      Internet ingår i hyran
+                      Fiberinternet ingår i hyran
                     </p>
                   </CardContent>
                 </Card>
