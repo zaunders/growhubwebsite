@@ -4,7 +4,64 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
+import gemenskapLounge from "@/assets/gemenskap-lounge.jpg.asset.json";
+import { cn } from "@/lib/utils";
+
+const slides = [
+  {
+    src: gemenskapLounge.url,
+    alt: "Gemenskap på Growhub – medlemmar tar en fika i loungen",
+  },
+  {
+    src: coworkingHall.url,
+    alt: "Ljus och mysig lounge i Growhubs gemensamma lokal",
+  },
+  // Fler bilder läggs enkelt till här när de kommer
+];
+
+const ImageSlideshow = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="relative w-full rounded-lg overflow-hidden shadow-soft group">
+      <div className="relative max-h-[480px] aspect-[16/9]">
+        {slides.map((slide, index) => (
+          <img
+            key={slide.src}
+            src={slide.src}
+            alt={slide.alt}
+            className={cn(
+              "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
+              index === current ? "opacity-100" : "opacity-0"
+            )}
+          />
+        ))}
+      </div>
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            aria-label={`Visa bild ${index + 1}`}
+            onClick={() => setCurrent(index)}
+            className={cn(
+              "w-2.5 h-2.5 rounded-full transition-smooth",
+              index === current ? "bg-primary" : "bg-primary/30 hover:bg-primary/50"
+            )}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const Index = () => {
   const features = [
