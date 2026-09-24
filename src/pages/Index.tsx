@@ -24,10 +24,6 @@ const slides = [
     alt: "Ljus och mysig lounge i Growhubs gemensamma lokal",
   },
   {
-    src: kontorsrum1.url,
-    alt: "Kontorsrum på Growhub med konst på väggen",
-  },
-  {
     src: motesrum.url,
     alt: "Ljust mötesrum med bord och stolar",
   },
