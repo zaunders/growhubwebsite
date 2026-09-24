@@ -11,54 +11,44 @@ const Index = () => {
     {
       icon: Coffee,
       title: "Kontor, mötesrum och kök",
-      description: "Fullt utrustade arbetsmiljöer och gemensamma utrymmen"
+      description: "Fullt utrustade arbetsmiljöer och gemensamma utrymmen",
     },
     {
       icon: Calendar,
       title: "24/7 Tillgång",
-      description: "Jobba när det passar dig bäst, alla dagar"
+      description: "Jobba när det passar dig bäst, alla dagar",
     },
     {
       icon: Users,
       title: "Community",
-      description: "Träffa likasinnade entreprenörer och kreatörer"
-    }
+      description: "Umgås med fina medmänniskor och hitta lokala vänner",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-20 bg-hero-gradient text-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <img 
-                src="/lovable-uploads/0bf160b1-b47c-4019-b203-f9a6a70957be.png" 
-                alt="Growhub" 
+              <img
+                src="/lovable-uploads/0bf160b1-b47c-4019-b203-f9a6a70957be.png"
+                alt="Growhub"
                 className="h-40 md:h-48 w-auto bg-transparent border-none outline-none"
               />
             </div>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-              Ett coworking-space och kooperativ mitt i Röstånga där kreativitet, 
-              samarbete och innovation blomstrar tillsammans.
+              Ett coworking-space och kooperativ mitt i Röstånga som är en plats för kreativitet, samarbete och
+              innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="hero" 
-                size="lg"
-                className="transition-smooth"
-                asChild
-              >
+              <Button variant="hero" size="lg" className="transition-smooth" asChild>
                 <Link to="/hyr-plats">Hyr plats hos oss</Link>
               </Button>
-              <Button 
-                variant="hero-outline" 
-                size="lg"
-                className="transition-smooth"
-                asChild
-              >
+              <Button variant="hero-outline" size="lg" className="transition-smooth" asChild>
                 <Link to="/growhubs-historia">Läs mer om Growhub</Link>
               </Button>
             </div>
@@ -85,11 +75,9 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Vad vi erbjuder</h2>
-              <p className="text-muted-foreground text-lg">
-                Allt du behöver för att vara produktiv och inspirerad
-              </p>
+              <p className="text-muted-foreground text-lg">Allt du behöver för att vara produktiv och inspirerad</p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth group">
@@ -98,9 +86,7 @@ const Index = () => {
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
                     <CardTitle className="text-xl">{feature.title}</CardTitle>
-                    <CardDescription className="text-base">
-                      {feature.description}
-                    </CardDescription>
+                    <CardDescription className="text-base">{feature.description}</CardDescription>
                   </CardHeader>
                 </Card>
               ))}
@@ -115,14 +101,14 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Ett kooperativ för kreativa själar</h2>
+                <h2 className="text-3xl font-bold mb-6">Ett kooperativt mötesplats i Röstånga</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Growhub är mer än bara ett kontor. Vi huserar en inköpsförening för fantastisk mat, 
-                  många lokala möten och lokalen är öppen för socialt häng på kvällar och helger.
+                  Growhub är mer än bara ett kontor. Vi huserar en inköpsförening för fantastisk mat, många lokala möten
+                  och lokalen är öppen för socialt häng på kvällar och helger.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Growhub är ett kooperativ som finns till för att skapa förutsättningar oss i byn Röstånga 
-                  att arbeta i en fin och produktiv miljö tillsammans. Föreningen drivs av hyresgästerna. Välkommen!
+                  Growhub är ett kooperativ som finns till för att skapa förutsättningar oss i byn Röstånga att arbeta i
+                  en fin och produktiv miljö tillsammans. Föreningen drivs av hyresgästerna. Välkommen!
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <Badge variant="secondary">Kooperativ</Badge>
@@ -138,8 +124,8 @@ const Index = () => {
                 <h3 className="text-2xl font-semibold mb-6 text-center">Vilka är vi?</h3>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Vi som sitter på Growhub representerar en bred mix av kompetenser och 
-                    passioner som sträcker sig över många olika områden:
+                    Vi som sitter på Growhub representerar en bred mix av kompetenser och passioner som sträcker sig
+                    över många olika områden:
                   </p>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <Badge variant="outline">Lokal utveckling</Badge>
@@ -151,8 +137,8 @@ const Index = () => {
                     <Badge variant="outline">Mat</Badge>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-center">
-                    Vi är en spännande och varm grupp av människor med massor av kunskaper 
-                    vi tycker om att dela med oss av!
+                    Vi är en spännande och varm grupp av människor med massor av kunskaper vi tycker om att dela med oss
+                    av!
                   </p>
                 </div>
               </div>
@@ -167,8 +153,8 @@ const Index = () => {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Redo att bli en del av gemenskapen?</h2>
             <p className="text-muted-foreground mb-8 text-lg">
-              Gå med i Growhub idag och upptäck hur produktivt och inspirerande 
-              det kan vara att arbeta i en stödjande kooperativ miljö.
+              Gå med i Growhub idag och upptäck hur produktivt och inspirerande det kan vara att arbeta i en stödjande
+              kooperativ miljö.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 transition-smooth" asChild>
               <a href="/kontakt">Kontakta oss för mer information</a>
