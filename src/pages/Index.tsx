@@ -147,6 +147,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Ledig plats-banner */}
+      <section className="pb-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <Link
+              to="/hyr-plats"
+              className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-section-gradient border border-primary/20 rounded-lg shadow-soft hover:shadow-medium transition-smooth px-6 py-5"
+            >
+              <p className="text-lg md:text-xl font-semibold text-foreground text-center sm:text-left">
+                Nu kommer strax en plats bli ledig hos oss!
+              </p>
+              <span className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2 rounded-md text-sm font-medium whitespace-nowrap group">
+                Läs mer om platsen
+                <ArrowRight className="h-4 w-4 transition-smooth group-hover:translate-x-1" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
