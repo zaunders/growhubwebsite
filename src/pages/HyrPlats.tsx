@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Clock, Wifi, Coffee, Users, Send, Leaf, Home, Phone } from "lucide-react";
+import { MapPin, Clock, Wifi, Coffee, Users, Send, Leaf, Home, Phone, Calendar } from "lucide-react";
 import annonsBild from "@/assets/hyr-plats-annons.jpg.asset.json";
 
 
@@ -45,7 +45,7 @@ const HyrPlats = () => {
                 <CardContent className="p-8 md:p-10 flex flex-col justify-center">
                   <span className="inline-flex items-center gap-2 self-start rounded-full bg-accent-gradient px-4 py-1.5 text-sm font-semibold text-white mb-4">
                     <Leaf className="h-4 w-4" />
-                    En plats är öppen just nu
+                    En plats blir ledig 1/12 2026
                   </span>
                   <h2 className="text-3xl font-bold mb-4 text-foreground">
                     Coworkingplats i hjärtat av Röstånga
@@ -56,6 +56,10 @@ const HyrPlats = () => {
                     ta en av platserna i våra delade kontorsrum.
                   </p>
                   <div className="space-y-2 mb-6">
+                    <p className="flex items-center gap-2 text-foreground">
+                      <Calendar className="h-5 w-5 text-primary" />
+                      Tillträde från 1 december 2026
+                    </p>
                     <p className="flex items-center gap-2 text-foreground">
                       <MapPin className="h-5 w-5 text-primary" />
                       Per Gummessons väg 5, Röstånga
