@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Wifi, Coffee, Calendar, Zap, Shield } from "lucide-react";
+import { Users, Wifi, Coffee, Calendar, Zap, Shield, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
