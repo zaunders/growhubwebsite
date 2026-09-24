@@ -58,7 +58,7 @@ const ImageSlideshow = () => {
 
   return (
     <div className="w-full rounded-lg overflow-hidden shadow-soft">
-      <div className="relative max-h-[480px] aspect-[16/9]">
+      <div className="relative w-full aspect-[4/3] max-h-[560px]">
         {slides.map((slide, index) => (
           <img
             key={slide.src}
@@ -71,7 +71,7 @@ const ImageSlideshow = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center gap-2 py-4 bg-background">
+      <div className="flex justify-center gap-2 py-3 bg-background">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -141,7 +141,7 @@ const Index = () => {
       {/* Bildspel */}
       <section className="py-8">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <ImageSlideshow />
           </div>
         </div>
