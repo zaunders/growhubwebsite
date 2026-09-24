@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Wifi, Coffee, Calendar, Zap, Shield, ArrowRight } from "lucide-react";
+import { Users, Wifi, Coffee, Calendar, Zap, Shield, ArrowRight, ShoppingBasket } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import coworkingHall from "@/assets/coworking-hall.jpg.asset.json";
@@ -241,6 +241,25 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rekomat Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-section-gradient border border-primary/20 rounded-lg shadow-soft p-8 md:p-10 text-center">
+            <div className="w-14 h-14 bg-accent-gradient rounded-lg flex items-center justify-center mx-auto mb-6">
+              <ShoppingBasket className="h-7 w-7 text-primary-foreground" />
+            </div>
+            <h2 className="text-3xl font-bold mb-4">Rekomat Röstånga</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              På Growhub huseras även Rekomat Röstånga – ett inköpskooperativ för ekologisk och lokal mat.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Medlemmarna beställer månadsvis mat tillsammans genom föreningen, och all uppdelning och uthämtning sker
+              på Growhub.
+            </p>
           </div>
         </div>
       </section>
